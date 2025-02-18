@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    {% load static %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .text-4xl {
+            font-size: 2.5rem;
+            color: #2c5282;
+            margin-bottom: 1.5rem;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 1rem;
+        }
+
+        .half-width {
+            flex: 1;
+        }
+
+        .img-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            
+        }
+
+        .leading-relaxed {
+            line-height: 1.75;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .heading-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .flex {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading-container">
+            <h1 class="text-4xl">About Us</h1>
+        </div>
+        <div class="flex">
+            <!-- Text Content -->
+            <div class="half-width">
+                <p class="leading-relaxed mt-4">
+                    Welcome to our steel manufacturing defects store! We are a team of professionals specializing in identifying, analyzing, and resolving defects in steel manufacturing. Our expertise spans across all stages of steel production, ensuring that your products meet the highest industry standards.
+                </p>
+                <p class="leading-relaxed mt-4">
+                    We offer comprehensive services that include defect identification, root cause analysis, and quality improvement strategies for steel manufacturers, addressing issues such as cracks, inclusions, surface imperfections, and dimensional deviations with accuracy.
+                </p>
+                <p class="leading-relaxed mt-4">
+                    We are committed to maintaining the highest standards of quality in everything we do. Our services are designed to improve the reliability and durability of steel products, contributing to safer, longer-lasting infrastructure and machinery.
+                </p>
+                <p class="leading-relaxed mt-4">
+                    Our unwavering dedication to precision, innovation, and customer satisfaction sets us apart. We deliver high-impact results that enhance product quality and improve operational efficiency, giving your business a competitive edge.
+                </p>
+            </div>
+            
+            <!-- Image Section -->
+            <div class="half-width img-container">
+                <img src="{% static 'images/about.jpg' %}" alt="About Us">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock content %}

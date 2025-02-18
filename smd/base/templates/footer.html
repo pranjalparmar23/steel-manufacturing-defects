@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        .footer {
+            background-color: #f8f9fa; 
+            padding: 40px 0;
+            color: #333;
+        }
+
+        .footer-container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 16px; 
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        .footer-copyright {
+            margin-top: 20px;
+            border-top: 1px solid #d1d5db; 
+            padding-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #333; 
+        }
+    </style>
+</head>
+<body>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Section 1: About Us -->
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="about/">Company Overview</a></li>
+                        <li><a href="about/">Mission and Vision</a></li>
+                    </ul>
+                </div>
+                <!-- Section 2: Services -->
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services/">Quality Enhancement</a></li>
+                        <li><a href="services/">Support</a></li>
+                    </ul>
+                </div>
+                <!-- Section 3: Contacts -->
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="contact/">Message</a></li>
+                        <li><a href="contact/">Inquiry</a></li>
+                    </ul>
+                </div>
+                <!-- Section 4: Policy and FAQ -->
+                <div class="footer-section">
+                    <h3>Policy and FAQ</h3>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Copyright Section -->
+            <div class="footer-copyright">
+                <p>Copyright &copy; 2024 SPK-Steel Manufacturing Defects by @ Sakina Mala, Pranjal Parmar, Keyush Thumar.</p>
+            </div>          
+        </div>
+    </footer>
+</body>
+</html>

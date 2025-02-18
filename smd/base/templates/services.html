@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    {% load static %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .text-4xl {
+            font-size: 2.5rem;
+            color: #2c5282;
+            margin-bottom: 1.5rem;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .half-width {
+            flex: 1;  
+        }
+
+        .img-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: 70%;
+            background-color: transparent;
+            
+        }
+
+        .leading-relaxed {
+            line-height: 1.75;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .heading-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .list-disc {
+            list-style-type: disc;
+        }
+
+        .pl-4 {
+            padding-left: 1rem;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .flex {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading-container">
+            <h1 class="text-4xl">Services</h1>
+        </div>
+        <div class="flex">
+            <!-- Image Section -->
+            <div class="half-width img-container">
+                <img src="{% static 'images/service.jpg' %}" alt="Services">
+            </div>
+            
+            <!-- Text Section -->
+            <div class="half-width">
+                <ul class="list-disc pl-4 space-y-4 leading-relaxed mt-4">
+                    <li>
+                        <span class="font-bold">Proper Understanding of Defects:</span> Pinpoints exact locations of defects in steel manufacturing images.
+                    </li>
+                    <li>
+                        <span class="font-bold">Quality Assurance:</span> Our products are sourced from trusted manufacturers ensuring high-quality standards.
+                    </li>
+                    <li>
+                        <span class="font-bold">Competitive Pricing:</span> We offer competitive pricing without compromising on quality.
+                    </li>
+                    <li>
+                        <span class="font-bold">Product Education:</span> Comprehensive demos help you make informed decisions about steel defects.
+                    </li>
+                    <li>
+                        <span class="font-bold">Customization:</span> Tailored solutions to fit your specific needs.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock content %}
