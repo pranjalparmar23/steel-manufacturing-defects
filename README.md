@@ -1,14 +1,15 @@
 Link to access the dataset  - https://drive.google.com/drive/folders/1ffM5TnlXm_3YbnoeIfeySQmiWPoJl-1R?usp=sharing
+
 Steel Manufacturing Defects Detection
 
 **Repository Structure**
 
-models/     # Contains trained models (ResNet50, ResUNet, CNN)
-resnet/     # Contains Streamlit files for defect detection
-smd/        # Contains website files
-venv/       # Virtual environment for dependencies
-.gitignore  # Git ignore file
-.gitattributes # Git attributes file
+models/     # Contains trained models (ResNet50, ResUNet, CNN),
+resnet/     # Contains Streamlit files for defect detection,
+smd/        # Contains website files,
+venv/       # Virtual environment for dependencies,
+.gitignore  # Git ignore file,
+.gitattributes # Git attributes file,
 
 **Installation and Setup**
 
