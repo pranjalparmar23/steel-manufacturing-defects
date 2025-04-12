@@ -15,8 +15,8 @@ venv/       # Virtual environment for dependencies,
 
 **1. Clone the Repository**
 
-git clone [<repository-url>](https://github.com/pranjalparmar23/steel-manufacturing-defects.git)
-cd [<repository-name>](https://github.com/pranjalparmar23/steel-manufacturing-defects.git)
+git clone https://github.com/pranjalparmar23/steel-manufacturing-defects.git
+cd steel-manufacturing-defects
 
 **2. Activate Virtual Environment**
 
@@ -28,19 +28,19 @@ cd [<repository-name>](https://github.com/pranjalparmar23/steel-manufacturing-de
 
 **1. Run the Website**
 
-cd smd
+cd smd -
 python manage.py server
 
 **2. Run the Streamlit Application**
 
 **Detect Defective Images**
 
-cd resnet
+cd resnet -
 streamlit run streamlit.py --server.enableXsrfProtection false
 
 **Detect Non-Defective Images**
 
-cd resnet
+cd resnet -
 streamlit run streamlit2.py --server.enableXsrfProtection false
 
 **Models Used**
