@@ -15,8 +15,8 @@ venv/       # Virtual environment for dependencies,
 
 **1. Clone the Repository**
 
-git clone <repository-url>
-cd <repository-name>
+git clone [<repository-url>](https://github.com/pranjalparmar23/steel-manufacturing-defects.git)
+cd [<repository-name>](https://github.com/pranjalparmar23/steel-manufacturing-defects.git)
 
 **2. Activate Virtual Environment**
 
