@@ -27,7 +27,7 @@ git clone https://github.com/pranjalparmar23/steel-manufacturing-defects.git
 
 **1. Run the Website**
 ```bash
-cd smd -
+cd smd
 ```
 ```bash
 python manage.py server
@@ -36,14 +36,14 @@ python manage.py server
 
 **Detect Defective Images**
 ```bash
-cd resnet -
+cd resnet
 ```
 ```bash
 streamlit run streamlit.py --server.enableXsrfProtection false
 ```
 **Detect Non-Defective Images**
 ```bash
-cd resnet -
+cd resnet
 ```
 ```bash
 streamlit run streamlit2.py --server.enableXsrfProtection false
