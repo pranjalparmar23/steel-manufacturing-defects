@@ -14,34 +14,40 @@ venv/       # Virtual environment for dependencies,
 **Installation and Setup**
 
 **1. Clone the Repository**
-
+```bash
 git clone https://github.com/pranjalparmar23/steel-manufacturing-defects.git
-
+```
 **2. Activate Virtual Environment**
 
 **Windows**
-
+```bash
 ./venv/Scripts/activate
-
+```
 **Running the Project**
 
 **1. Run the Website**
-
+```bash
 cd smd -
+```
+```bash
 python manage.py server
-
+```
 **2. Run the Streamlit Application**
 
 **Detect Defective Images**
-
+```bash
 cd resnet -
+```
+```bash
 streamlit run streamlit.py --server.enableXsrfProtection false
-
+```
 **Detect Non-Defective Images**
-
+```bash
 cd resnet -
+```
+```bash
 streamlit run streamlit2.py --server.enableXsrfProtection false
-
+```
 **Models Used**
 
 ResNet50: Used for defect detection in images
