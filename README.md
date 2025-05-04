@@ -78,3 +78,7 @@ Virtual Environment: Contains dependencies for the project.
 
 ![image](https://github.com/user-attachments/assets/04ca5746-e719-4224-9cd0-b3d4e4a7369d)
 
+**Activity Diagram**
+![ad](https://github.com/user-attachments/assets/0dbbf330-7317-430d-ab1b-84ea54f6e5b7)
+
+
